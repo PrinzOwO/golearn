@@ -88,7 +88,7 @@ func BenchmarkExpectationMaximizationOneRow(b *testing.B) {
 	trainData, _ := base.ParseCSVToInstances("./gaussian_mixture.csv", false)
 	testData, _ := base.ParseCSVToInstances("./gaussian_mixture.csv", false)
 
-	em, err := NewExpectationMaximization(1)
+	em, err := NewExpectationMaximization(2)
 	if err != nil {
 		panic(err)
 	}
